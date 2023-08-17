@@ -19,7 +19,7 @@
 公众号：**JavaDog程序狗**
 **在公众号，发送【wx】 ，无任何套路即可获得**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d4fce750c9b0480ebb13bbd01bce7b4b.png)
+![在这里插入图片描述](https://img.javadog.net/blog/wx-uniapp/d4fce750c9b0480ebb13bbd01bce7b4b.png)
 
 
 
@@ -32,7 +32,7 @@
 |3  | 项目实战 | [SpringBoot+uniapp+uview2打造一个企业黑红名单吐槽小程序](https://blog.csdn.net/baidu_25986059/article/details/129263139) |
 
 ### 🍩水图
-![请添加图片描述](https://img-blog.csdnimg.cn/f514fdb2153543fe9f8fbb6897f3243a.gif)
+![](https://img.javadog.net/blog/wx-uniapp/f514fdb2153543fe9f8fbb6897f3243a.gif)
 ******
 
 ## 正文
@@ -57,16 +57,17 @@
 > 以测试号进行展示操作步骤
 
 ##### 在公众号左侧菜单【开发工具】=》【公众平台测试帐号】
-![](https://img-blog.csdnimg.cn/56d167b00c4041558c623f2e1578958a.png)
+![](https://img.javadog.net/blog/wx-uniapp/56d167b00c4041558c623f2e1578958a.png)
 ##### 在网页服务-网页账号-修改
-![](https://img-blog.csdnimg.cn/7c204111a28242f390026212a96d0592.png)
+![](https://img.javadog.net/blog/wx-uniapp/7c204111a28242f390026212a96d0592.png)
 ##### 修改OAuth2.0网页授权【授权回调页面域名】
 > **切记不要带http**，此处地址填写本地ip即可。可在键盘通过【win+R】，输入【cmd】，确定后输入ipconfig，复制出IPv4地址即可。或者启动uniapp后，控制台打印的地址，**以上方法仅限本地调试**。
 
-![](https://img-blog.csdnimg.cn/98dd380c9fc94844b6030a259f413934.png)
-![](https://img-blog.csdnimg.cn/927f597802224340a6f80b346dbc18f7.png)
+![](https://img.javadog.net/blog/wx-uniapp/98dd380c9fc94844b6030a259f413934.png)
 
-![](https://img-blog.csdnimg.cn/3e551c285ca94cb7a402b437893b9946.png)
+![](https://img.javadog.net/blog/wx-uniapp/927f597802224340a6f80b346dbc18f7.png)
+
+![](https://img.javadog.net/blog/wx-uniapp/3e551c285ca94cb7a402b437893b9946.png)
 
 
 ******
@@ -85,7 +86,7 @@
 ##### 1. 用户同意授权，获取code
 > 前端引导用户进入授权页面同意授权，获取code
 
-![](https://img-blog.csdnimg.cn/283bba59941f49238e9398b2ac379d15.png)
+![](https://img.javadog.net/blog/wx-uniapp/283bba59941f49238e9398b2ac379d15.png)
 ##### 2. 通过 code 换取网页授权access_token
 > 通过前端获取的code，**调用我们自己服务器接口**，通过**后台使用code调取微信接口**，换取**access_token(网页授权接口调用凭证)**，access_token是调用用户信息及其他接口所必需的参数
 
@@ -104,16 +105,16 @@
 #### 简易流程图
 > 为了方便理解，画了一个简易流程图，有疑惑别急，下面还有现实列子解释版
 
-![](https://img-blog.csdnimg.cn/9a5ac132fed24eeabe9c1a5cc80aa81a.png)
+![](https://img.javadog.net/blog/wx-uniapp/9a5ac132fed24eeabe9c1a5cc80aa81a.png)
 
 > 举个实际购买**苹果手机**例子，可能不太贴合，但有助与理解
 
-![](https://img-blog.csdnimg.cn/93a40258a8d14f97ad398dceb064aafb.png)
+![](https://img.javadog.net/blog/wx-uniapp/93a40258a8d14f97ad398dceb064aafb.png)
 ******
 #### 步骤
 > 根据下图进行步骤分析
 
-![](https://img-blog.csdnimg.cn/ebb0bf8e2b0a40669d958c82616e927e.png)
+![](https://img.javadog.net/blog/wx-uniapp/ebb0bf8e2b0a40669d958c82616e927e.png)
 ##### 1.步骤一
 
  前端uniapp中**新建授权页**
@@ -121,10 +122,10 @@
 > 页面进入后，onLoad直接跳转微信接口地址，微信方通过appId获取code，并**携带code**根据**redirect_uri返回到当前页面**，此刻**地址栏中就包含着code信息**
 
 **跳转前**
-![](https://img-blog.csdnimg.cn/bb26cb81414e47efa6500076c364e617.png)
+![](https://img.javadog.net/blog/wx-uniapp/bb26cb81414e47efa6500076c364e617.png)
 
 **跳转后**
-![](https://img-blog.csdnimg.cn/58cd73256d5143b38ae6da03849d542d.png)
+![](https://img.javadog.net/blog/wx-uniapp/58cd73256d5143b38ae6da03849d542d.png)
 
 关键代码
 
@@ -138,7 +139,7 @@ local + "&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=
 
 其他参数可看官方参数说明
 
-![](https://img-blog.csdnimg.cn/b35b0beaedf6484480d0fa50388b2623.png)
+![](https://img.javadog.net/blog/wx-uniapp/b35b0beaedf6484480d0fa50388b2623.png)
 ******
 ##### 2.步骤二
 1.后端提供接口，**入参**为上一步的**code**，**通过code**调取微信接口**换取access_token**。此处后端使用了[weixin-java-mp](https://github.com/Wechat-Group/WxJava)组件，方便对接微信接口。
@@ -199,16 +200,17 @@ const res = await this.$api.login({
 > 微信中【OAuth2.0网页授权】-**授权回调页面域名配置错误**
 
 
-![](https://img-blog.csdnimg.cn/87e8ed08eff14244821c198375d6c2f1.png)
-![](https://img-blog.csdnimg.cn/54c670d5f7aa470493d363e5604ae8f3.png)
+![](https://img.javadog.net/blog/wx-uniapp/87e8ed08eff14244821c198375d6c2f1.png)
+
+![](https://img.javadog.net/blog/wx-uniapp/54c670d5f7aa470493d363e5604ae8f3.png)
 #### 错误2：oauth_code已使用
 > **code每次使用换取access_token后便失效**，再次调用则会报错，请**根据自己业务**，进行缓存比较，**防止重复调用**
 
-![](https://img-blog.csdnimg.cn/188f3cbd636146f2a5b33872b30fdcb9.png)
+![](https://img.javadog.net/blog/wx-uniapp/188f3cbd636146f2a5b33872b30fdcb9.png)
 ## 总结
 本文虽然篇幅长，但是实现功能简单，主要目的是展示**网页授权**的流程与思路，对于微信对接，本人建议多查看**微信官方文档**，写的很详细，通读过几遍后就会对疑问点有些许领悟，希望能对大家有所帮助。
 
-![](https://img-blog.csdnimg.cn/e74f3636c05a430eab8819333fa004eb.jpeg)
+![](https://img.javadog.net/blog/wx-uniapp/e74f3636c05a430eab8819333fa004eb.jpg)
 
 
 | JavaDog| 狗屋地址 |
